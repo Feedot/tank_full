@@ -1,0 +1,22 @@
+{
+  "name": "bosh",
+  "version": "1.0.0",
+  "description": "configurator for bosh shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://landstrangerfromnebo@bitbucket.org/boshteam/bosh.git"
+  },
+  "author": "landstranger",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/boshteam/bosh#readme",
+  "dependencies": {
+    "autoprefixer": "^6.5.0",
+    "gulp": "^3.9.1",
+    "postcss": "^5.2.4",
+    "postcss-cli": "^2.6.0"
+  }
+}
