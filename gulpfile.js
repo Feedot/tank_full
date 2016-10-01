@@ -9,6 +9,7 @@ var gulp = require('gulp'),
   less = require('gulp-less'),
   sourcemaps = require('gulp-sourcemaps'),
   imagemin = require('gulp-imagemin'),
+  concatCss = require('gulp-concat-css'),
   pngquant = require('imagemin-pngquant'),
 
   rigger = require('gulp-rigger'),
@@ -43,11 +44,11 @@ var path = {
 };
 var config = {
   server: {
-    baseDir: "./build"
+    baseDir: "./build/templates"
   },
   tunnel: true,
   host: 'localhost',
-  port: 9000,
+  port: 7000,
   logPrefix: "boshConfigurator"
 };
 
@@ -71,6 +72,7 @@ gulp.task('style:build', function () {
     .pipe(sourcemaps.init())
     .pipe(less())
     .pipe(prefixer())
+    .pipe(concatCss("styles.css"))
     .pipe(cssmin())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(path.build.css))
