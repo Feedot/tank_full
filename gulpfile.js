@@ -77,14 +77,14 @@ gulp.task('style:build', function () {
     .pipe(reload({stream: true}));
 });
 gulp.task('image:build', function () {
-  gulp.src(path.src.img) //Выберем наши картинки
-    .pipe(imagemin({ //Сожмем их
+  gulp.src(path.src.img)
+    .pipe(imagemin({
       progressive: true,
       svgoPlugins: [{removeViewBox: false}],
       use: [pngquant()],
       interlaced: true
     }))
-    .pipe(gulp.dest(path.build.img)) //И бросим в build
+    .pipe(gulp.dest(path.build.img))
     .pipe(reload({stream: true}));
 });
 
