@@ -10,6 +10,7 @@ var gulp = require('gulp'),
   sourcemaps = require('gulp-sourcemaps'),
   imagemin = require('gulp-imagemin'),
   concatCss = require('gulp-concat-css'),
+  concat = require('gulp-concat'),
   pngquant = require('imagemin-pngquant'),
 
   rigger = require('gulp-rigger'),
@@ -28,14 +29,14 @@ var path = {
   },
   src: {
     html: 'src/templates/index.html',
-    js: 'src/js/main.js',
+    js: 'src/js/*.js',
     style: 'src/styles/*.less',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*'
   },
   watch: {
     html: 'src/templates/*.html',
-    js: 'src/js/main.js',
+    js: 'src/js/*.js',
     style: 'src/styles/**/*.less',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*'
@@ -62,6 +63,7 @@ gulp.task('js:build', function () {
   gulp.src(path.src.js)
     .pipe(rigger())
     .pipe(sourcemaps.init())
+    .pipe(concat("main.js"))
     .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(path.build.js))

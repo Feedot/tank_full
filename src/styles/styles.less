@@ -1,11 +1,6 @@
 .wrap {
   margin: 0 auto;
-  max-height: 150px;
-  max-width: 350px;
-  position: absolute;
-  left: 40%;
-  top: 54%;
-  margin-top: 100px;
+  position: relative;
 
   .circ {
     @count: 9;
@@ -90,12 +85,11 @@
         }
 
         &.active {
-          background: #525f6c;
-
           a {
-            color: #fff
+            background: #525f6c;
+            color: #fff;
+            box-shadow: 0 0 0 10px #525f6c;
           }
-        }
       }
 
       &:before {
