@@ -6,7 +6,7 @@
 
 .product-tabs {
   display: block;
-  min-width: 700px;
+  min-width: 500px;
   height: auto;
   color: #fff;
   margin: -3px 0;
@@ -50,7 +50,13 @@
   }
   &.active {
     .product-tab__head {
-      border-bottom: 1px solid #000;
+
+      background-color: #525f6b;
+      color: white;
+      cursor: pointer;
+      &:before {
+        color: white;
+      }
     }
     .product-tab__content {
       display: block;

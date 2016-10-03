@@ -30,7 +30,7 @@ var path = {
   src: {
     html: 'src/templates/index.html',
     js: 'src/js/*.js',
-    style: 'src/styles/*.less',
+    style: 'src/styles/**/*.less',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*'
   },
@@ -45,7 +45,7 @@ var path = {
 };
 var config = {
   server: {
-    baseDir: "./build/templates"
+    baseDir: "./build/"
   },
   tunnel: true,
   host: 'localhost',
