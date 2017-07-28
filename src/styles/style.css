@@ -1,0 +1,908 @@
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: Ubuntu-Light;
+    src: url(../fonts/Ubuntu-Light.ttf);
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Ubuntu-Regular;
+}
+.anchor_in{
+    position: relative;
+}
+.anchor_in .anchor{
+    position: absolute;
+    top:-80px;
+}
+
+header, .header_two{
+   position: fixed;
+    z-index: 10;
+    background: white;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    border-bottom: 1px solid #989ea7;
+}
+.under_header{
+    height: 90px;
+    background: #65a9d9;
+}
+.header_two {
+    display: none;
+}
+footer{
+    position: relative;
+    padding-left:120px;
+    padding-right:120px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+header img, footer img {
+    float: left;
+    display: inline-block;
+    margin-top: -10px;
+}
+header img{
+    margin: 0px;
+    padding-top: 25px;
+    padding-left: 120px;
+}
+header ul,footer ul{
+    font-size: 16px;
+    font-family: "Ubuntu-Regular";
+    color: rgba(45, 57, 76, 0.839);
+    list-style:none;
+    word-spacing: 40px;
+    margin: 0px;
+    text-align: right;
+
+}
+header ul{
+    padding-right: 120px;
+    padding-top: 35px;
+}
+header ul li{
+    display: inline;
+    word-spacing: 4px;
+}
+header ul li a{
+    text-decoration: none;
+    color: rgba(45, 57, 76, 0.839);
+}
+header ul li a:hover{
+    color: #65a9d9;
+}
+footer ul li a{
+    text-decoration: none;
+    color: rgba(45, 57, 76, 0.839);
+}
+footer ul li a:hover{
+    color: #65a9d9;
+}
+.how_it_work{
+    background: #65a9d9;
+    padding-top: 100px;
+    position: relative;
+    text-align: right;
+}
+.how_it_work .clouds{
+    position: absolute;
+}
+.how_it_work .sign_free{
+    position: absolute;
+    vertical-align: top;
+    top:260px;
+    text-align: left;
+    padding-left: 150px;
+}
+.how_it_work .sign_free .upper{
+    font-size: 52px;
+    font-family: "Ubuntu-Regular";
+    color: rgb(247, 246, 242);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-bottom: 45px;
+}
+.how_it_work .sign_free .after_upper{
+    font-size: 24px;
+    font-family: "Ubuntu-Regular";
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    margin-bottom: 75px;
+}
+
+
+.how_it_work .sign_free .str_with_sp{
+    font-size: 16px;
+    font-family: "Ubuntu-Regular";
+    color: rgb(247, 247, 247);
+    margin-bottom: 40px;
+}
+.how_it_work .sign_free .str_with_sp span{
+    padding: 6px;
+    background: #ffce54;
+    border-radius: 9px;
+}
+.how_it_work .sign_free input.text{
+    font-size:20px;
+    padding: 10px;
+    padding-left: 20px;
+    width: 60%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 4px 0px black ;
+}
+.how_it_work .sign_free input.text::-webkit-input-placeholder{
+    color: rgba(45, 57, 76, 0.31);
+    font-size:18px;
+    font-family: "Ubuntu-Regular";
+}
+.how_it_work .sign_free input.text::-moz-placeholder{
+    color: rgba(45, 57, 76, 0.31);
+    font-size:18px;
+    font-family: "Ubuntu-Regular";
+}
+.how_it_work .sign_free input.text:-ms-input-placeholder{
+    color: rgba(45, 57, 76, 0.31);
+    font-size:18px;
+    font-family: "Ubuntu-Regular";
+}
+.how_it_work .sign_free input.but{
+    -webkit-appearance: none;
+    font-size:16px;
+    text-transform: uppercase;
+    padding:13px 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #77c344;
+    margin-left: 25px;
+    box-shadow: 0px 0px 4px 0px black;
+    vertical-align: bottom;
+}
+.how_it_work img.one{
+    transition: all 3s linear;
+    top:150px;
+    left: 120px;
+}
+.how_it_work img.two{
+    transition: all 2s;
+    bottom: 310px;
+    left: 120px;
+}
+.how_it_work .with_iph {
+    display: inline-block;
+    padding-right:120px;
+    position: relative;
+}
+.how_it_work .with_iph img.img_iphone{
+    margin-bottom: -3px;
+}
+.how_it_work  img.three{
+    transition: all 4s;
+    top: 140px;
+    right: 160px;
+}
+.how_it_work  img.four{
+    transition: all 2s;
+    bottom: 320px;
+    right: 90px;
+}
+.how_it_work .how_it_work_foot {
+    text-align: center;
+    background: white;
+    box-shadow: 0 2px 4px #989ea7;
+}
+.how_it_work .how_it_work_foot div{
+    vertical-align: middle;
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    position: relative;
+}
+.how_it_work .how_it_work_foot div img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.about_us{
+    padding-bottom: 25px;
+}
+.topic{
+    text-align: center;
+    padding: 70px;
+    font-size: 40px;
+    color: rgba(45, 57, 76, 0.851);
+    text-transform: uppercase;
+}
+article{
+    padding-top: 60px;
+    position: relative;
+    padding-left: 125px;
+}
+article img{
+    position: absolute;
+    right: 0px;
+}
+aside{
+    display: inline-block;
+    vertical-align: top;
+}
+aside div{
+    margin-bottom: 30px;
+}
+aside div div {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px;
+    margin-right: 30px;
+
+}
+aside div div img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+aside div span {
+    font-size: 22px;
+    color: rgba(45, 57, 76, 0.902);
+    vertical-align: middle;
+}
+aside div p{
+    font-size: 14px;
+    font-family: "OpenSans-Regular";
+    color: rgb(148, 153, 162);
+    margin: 0px;
+    margin-top: 15px;
+}
+/*@media screen and (max-width:1370px){*/
+    /*article{*/
+        /*padding-left: 60px;*/
+    /*}*/
+/*}*/
+.about_us_two{
+    position: relative;
+    background:url("../img/boatsback.jpg");
+    background-size:cover ;
+    background-position:right;
+    padding-bottom: 100px;
+}
+.about_us_two .n1{
+    background: #65a9d9;
+}
+.about_us_two .topic{
+    padding-top:160px;
+    margin-top: 0px;
+}
+.about_us_two .paragraf{
+    transition: all 0.5s ease-in;
+    display: none;
+    opacity: 0;
+}
+.about_us_two .active{
+    /*transition: all 2s ease;*/
+    display: block;
+    opacity: 1;
+}
+.about_us_two aside {
+    margin-left: 130px;
+}
+.about_us_two aside img{
+    vertical-align: super;
+    margin-right: 20px;
+}
+.about_us_two aside span{
+    vertical-align: bottom;
+    font-size: 28px;
+    color: rgba(45, 57, 76, 0.878);
+}
+.about_us_two aside p{
+    font-size: 16px;
+    font-family: "OpenSans-Regular";
+    color: rgba(90, 98, 110, 0.89);
+    line-height: 2;
+}
+.about_us_two_foot{
+    text-align: center;
+}
+.about_us_two_foot ul {
+    padding: 0px;
+    list-style: none;
+}
+.about_us_two_foot ul li{
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 30px;
+    width: 20px;
+    padding: 20px;
+    color: #c9ccd0;
+    font-weight: bold;
+    transition: all 1.5s ease-in;
+}
+.contact_us{
+    text-align: center;
+    padding-bottom: 150px;
+}
+.contact_us div{
+    display: inline-block;
+}
+.contact_us .topic{
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+}
+.contact_us input.text_with_img {
+    width: 60%;
+    font-size: 25px;
+    border-radius: 5px;
+    border:1px solid #d1d1d1;
+    padding: 26px;
+    margin-top: 20px;
+    margin-right: 30px;
+    color: #5a626e;
+    position: relative;
+    background: url("../img/letter.png") no-repeat;
+    background-position: 26px center;
+    text-indent: 46px;
+    vertical-align: bottom;
+}
+.contact_us input.text_with_img::-webkit-input-placeholder{
+    color: rgba(90, 98, 110, 0.278);
+    font-size:22px;
+    font-family: "OpenSans-Regular";
+    position: relative;
+    text-indent: 46px;
+}
+.contact_us input.text_with_img::-moz-placeholder{
+    color: rgba(90, 98, 110, 0.278);
+    /*background: url("../img/letter.png") no-repeat;*/
+    /*background-position: left center;*/
+    font-size:22px;
+    font-family: "OpenSans-Regular";
+    position: relative;
+    text-indent: 46px;
+}
+.contact_us input.text_with_img:-ms-input-placeholder{
+    color: rgba(90, 98, 110, 0.278);
+    /*background: url("../img/letter.png") no-repeat;*/
+    /*background-position: left center;*/
+    font-size:22px;
+    font-family: "OpenSans-Regular";
+    position: relative;
+    text-indent: 46px;
+
+}
+.contact_us div input.button{
+    -webkit-appearance: none;
+    font-size:20px;
+    text-transform: uppercase;
+    padding:30px 60px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #77c344;
+    margin-left: 25px;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 4px 0px black;
+}
+.contact_us p.not_topic{
+    font-size: 24px;
+    color: rgb(90, 98, 110);
+    font-style: italic;
+    font-family: Ubuntu-Light;
+}
+footer{
+    border-top:1px solid #989ea7 ;
+    position: relative;
+    padding-right: 320px;
+}
+footer div{
+    position: absolute;
+    right: 180px;
+    top:45px;
+}
+footer div img{
+    margin-right: 20px;
+}
+footer ul{
+    font-size: 14px;
+    font-family: "Ubuntu-Regular";
+    color: rgba(45, 57, 76, 0.839);
+    list-style:none;
+    word-spacing: 40px;
+    margin: 0px;
+    text-align: right;
+}
+footer ul li{
+    display: inline;
+    word-spacing: 4px;
+    color: rgba(77, 86, 100, 0.902);
+}
+@media screen and (max-width:1265px){
+    .how_it_work{
+        padding-top: 50px;
+    }
+    .how_it_work .sign_free{
+        padding-left: 75px;
+    }
+    .how_it_work .with_iph {
+        padding-right:60px;
+    }
+    .how_it_work .sign_free{
+        top:180px;
+    }
+    .how_it_work img.one{
+        top:75px;
+        left: 60px;
+    }
+    .how_it_work img.two{
+        left: 60px;
+    }
+    .how_it_work .sign_free .upper{
+        font-size: 40px;
+    }
+    .how_it_work .sign_free .after_upper{
+        font-size: 18px;
+    }
+    .how_it_work .how_it_work_foot div {
+        width: 15%;
+        height: 150px;
+    }
+    .how_it_work .how_it_work_foot div img{
+        width: 90%;
+    }
+    .topic{
+        padding: 50px;
+        font-size: 35px;
+    }
+    article{
+        padding-top: 0px;
+        padding-left: 60px;
+    }
+    article img{
+        width: 590px;
+    }
+    aside div{
+        margin-bottom: 15px;
+
+    }
+    aside div span {
+        font-size: 18px;
+    }
+    aside div p{
+        font-size: 12çpx;
+        margin-top: 0px;
+
+    }
+    aside div div{
+        margin-right: 10px;
+    }
+    aside div div img{
+        width: 30px;
+    }
+    footer{
+        padding-right: 200px;
+        padding-left: 50px;
+    }
+    footer ul{
+        word-spacing: 20px;
+    }
+    footer div{
+        right: 60px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    header img{
+        padding-left:60px;
+    }
+    .how_it_work{
+       text-align: center;
+    }
+    .how_it_work .sign_free{
+        position: static;
+        display: inline-block;
+        padding-left: 0px;
+        /*padding-left: 20px;*/
+    }
+    .how_it_work .with_iph{
+        padding-top: 40px;
+    }
+    .how_it_work .how_it_work_foot div {
+        width: 15%;
+        height: 120px;
+    }
+    article{
+        /*padding-top: 0px;*/
+        /*padding-left: 60px;*/
+        padding-left: 0px;
+        text-align: center;
+    }
+    article img.mac{
+        display: none;
+    }
+    aside{
+        text-align: left;
+    }
+    aside div{
+        margin-bottom: 30px;
+    }
+    aside div span {
+        font-size: 22px;
+    }
+    aside div p{
+        font-size: 16px;
+        margin-top: 15px;
+
+    }
+    aside div div{
+        margin-right: 30px;
+    }
+    aside div div img{
+        width: 50px;
+    }
+    .about_us_two{
+        padding-bottom: 50px;
+        padding-right: 30px;
+        padding-left: 50px;
+
+    }
+    .about_us_two aside {
+        margin: 0px;
+    }
+    .about_us_two .topic{
+        padding-top:120px;
+        margin-top: 0px;
+    }
+    .about_us_two_foot ul li{
+        font-size: 14px;
+        border-radius: 22.5px;
+        width: 16px;
+        padding: 15px;
+        color: #c9ccd0;
+        font-weight: bold;
+        transition: all 0.7s;
+    }
+
+}
+@media screen and (max-width:880px) {
+    header ul{
+        display: none;
+    }
+   header {
+       /*padding-left: 10px;*/
+       text-align: center;
+       display: none;
+   }
+   header img{
+       float: none;
+       padding-left: 0px;
+       transition:all 1s;
+   }
+   .header_two{
+       display: block;
+       height: 100%;
+       position: fixed;
+       z-index: 10;
+       background: white;
+       width: 100%;
+    }
+    .header_two ul{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        line-height: 50px;
+        padding: 0px;
+    }
+    .header_two ul li{
+        font-size: 25px;
+        list-style: none;
+    }
+    .header_two ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .header_two ul li a:hover{
+        color: #65a9d9;
+    }
+    .header_two.before{
+        height: 90px;
+        background: white;
+        text-align: left;
+        /*padding-left: 100px;*/
+
+    }
+    .header_two.before ul{
+        display: none;
+    }
+    .header_two.before img{
+        margin-left: 80px;
+        margin-top: 25px;
+    }
+    .header_two.after img{
+        margin-top: 30px;
+    }
+    .header_two.after{
+        background-color: rgba(90, 98, 110, 0.89);
+    }
+    .header_two .lines_button{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top:30px;
+        right: 30px;
+    }
+    .header_two .lines_button span{
+        width: 100%;
+        border: 2px solid #6795c9;
+        border-radius:15px;
+        position: absolute;
+        /*transform: ;*/
+        top: 50%;
+        left: 50%;
+        transform: rotate(0deg) translate(-50%,-50%);
+    }
+    .header_two .lines_button span:before{
+        content: '';
+        width: 100%;
+        position: absolute;
+        right: -2px;
+        border: 2px solid #6795c9;
+        top: 6px;
+        border-radius: 15px;
+        transition: all 0.5s;
+
+    }
+    .header_two .lines_button span:after{
+        content: '';
+        width: 100%;
+        position: absolute;
+        border-radius: 15px;
+        border: 2px solid #6795c9;
+        top: -10px;
+        right: -2px;
+        transition: all 0.5s;
+    }
+    .header_two.after .lines_button span{
+        border-color:transparent ;
+    }
+    .header_two.after .lines_button span:after{
+        transform: translateY(7px) rotate(45deg);
+    }
+    .header_two.after .lines_button span:before{
+        transform: translateY(-9px) rotate(-45deg);
+    }
+   .about_us{
+   }
+   .about_us_two aside span{
+       font-size: 16px;
+   }
+   .about_us_two aside img{
+       width: 50px;
+       vertical-align: middle;
+   }
+    .about_us_two aside p {
+        font-size: 14px;
+    }
+    .about_us_two aside p br {
+        display: none;
+    }
+    .about_us_two .topic{
+        padding-top:80px;
+        margin-top: 0px;
+    }
+    .contact_us{
+        padding-bottom: 75px;
+    }
+    .contact_us input.text_with_img {
+        width: 40%;
+        font-size: 18px;
+        padding:20px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    .contact_us div input.button{
+        font-size:18px;
+        padding:20px 40px;
+        margin-left: 25px;
+    }
+    .contact_us p.topic{
+        padding-bottom: 30px;
+    }
+    .contact_us p.not_topic{
+        font-size: 20px;
+        color: rgb(90, 98, 110);
+        font-style: italic;
+        font-family: Ubuntu-Light;
+    }
+    footer ul{
+        display: none;
+    }
+    footer div {
+        right: 90px;
+    }
+}
+@media screen and (max-width:570px) {
+    .how_it_work img.clouds.one{
+        left: 80%;
+        top:90px;
+        /*right: 20px;*/
+    }
+    .how_it_work .sign_free .upper{
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .how_it_work .sign_free .after_upper{
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .how_it_work .sign_free input.text{
+        font-size:16px;
+        padding: 7px;
+        padding-left: 14px;
+        width: 60%;
+        border-radius: 5px;
+
+    }
+    .how_it_work .sign_free input.but{
+        font-size:15px;
+        margin-left: 10px;
+        padding: 8px 5px;
+        box-shadow: 0px 0px 4px 0px black ;
+    }
+    .how_it_work .with_iph{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .how_it_work .with_iph img.four{
+        left: 20px;
+        bottom: 20px;
+    }
+    .how_it_work .with_iph img.three{
+        left: auto;
+        right: 20px;
+        /*display: none;*/
+    }
+    .how_it_work .with_iph img.img_iphone{
+        width: 100%;
+    }
+    .how_it_work .how_it_work_foot div {
+        height: 90px;
+    }
+    .topic{
+        padding: 30px;
+        font-size: 30px;
+    }
+    aside div{
+        margin-bottom: 15px;
+    }
+    aside div span {
+        font-size: 16px;
+    }
+    aside div p{
+        font-size: 12px;
+        margin-top: 0px;
+
+    }
+    aside div div{
+        margin-right: 10px;
+    }
+    aside div div{
+        padding: 0px;
+    }
+    aside div div img{
+        width: 30px;
+    }
+    .about_us{
+        padding-bottom: 30px;
+    }
+    .contact_us{
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+    .contact_us input.text_with_img {
+        width: 180px;
+        font-size: 16px;
+        padding:10px;
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+    .contact_us div input.button{
+        font-size:16px;
+        padding:10px 20px;
+        margin-left: 25px;
+    }
+    .contact_us p.topic{
+        padding-bottom: 30px;
+    }
+    .contact_us p.not_topic{
+        font-size: 16px;
+        color: rgb(90, 98, 110);
+        font-style: italic;
+        font-family: Ubuntu-Light;
+    }
+    footer div{
+        right: 30px;
+    }
+    .header_two ul li{
+        font-size: 16px;
+        list-style: none;
+    }
+}
+@media screen and (max-width:400px) {
+    .header_two.before img {
+        margin-left: 20px;
+    }
+    aside div{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    aside div p{
+        font-size: 12px;
+    }
+    aside div p br{
+        display: none;
+    }
+    .how_it_work .with_iph{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .how_it_work .sign_free{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .how_it_work .sign_free input.text{
+        font-size:14px;
+        padding: 10px;
+        width: 50%;
+    }
+    .contact_us input.text_with_img {
+        width: 140px;
+        font-size: 14px;
+        padding:10px;
+        margin-top: 10px;
+        margin-right: 0px;
+        background: none;
+        text-indent: 0px;
+    }
+    .contact_us div input.button{
+        font-size:14px;
+        padding:10px 10px;
+        margin-left: 25px;
+    }
+    .contact_us input.text_with_img::-webkit-input-placeholder{
+        font-size:12px;
+        text-indent: 0px;
+    }
+    .contact_us input.text_with_img::-moz-placeholder{
+        background: none;
+        font-size:12px;
+        text-indent: 0px;
+    }
+    .contact_us input.text_with_img:-ms-input-placeholder{
+        background: none;
+        font-size:12px;
+        text-indent: 0px;
+
+    }
+}

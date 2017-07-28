@@ -6,7 +6,7 @@ var gulp = require('gulp'),
   watch = require('gulp-watch'),
   prefixer = require('gulp-autoprefixer'),
   cssmin = require('gulp-minify-css'),
-  less = require('gulp-less'),
+  sass = require('gulp-sass'),
   sourcemaps = require('gulp-sourcemaps'),
   imagemin = require('gulp-imagemin'),
   concatCss = require('gulp-concat-css'),
@@ -30,14 +30,14 @@ var path = {
   src: {
     html: 'src/templates/index.html',
     js: 'src/js/*.js',
-    style: 'src/styles/**/*.less',
+    style: 'src/styles/**/*.*',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*'
   },
   watch: {
     html: 'src/templates/*.html',
     js: 'src/js/*.js',
-    style: 'src/styles/**/*.less',
+    style: 'src/styles/**/*.*',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*'
   },
@@ -72,7 +72,7 @@ gulp.task('js:build', function () {
 gulp.task('style:build', function () {
   gulp.src(path.src.style)
     .pipe(sourcemaps.init())
-    .pipe(less())
+    .pipe(sass.sync().on('error', sass.logError))
     .pipe(prefixer())
     .pipe(concatCss("styles.css"))
     .pipe(cssmin())
