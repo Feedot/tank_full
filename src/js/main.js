@@ -1,8 +1,8 @@
 window.onload=function () {
     var numbers = document.getElementById('numbers').getElementsByTagName('li'),
-        paragrafs = document.getElementsByClassName('paragraf');
-    var number = 1;
-    var int = setInterval(function () {
+        paragrafs = document.getElementsByClassName('paragraf'),
+        number = 1,
+        int = setInterval(function () {
         anime(number)
         number++
         if(number == 4){number = 0;}
@@ -36,8 +36,8 @@ window.onload=function () {
       }
     }
     function anime(number) {
-        var self = paragrafs[+number];
-        var back = numbers[+number];
+        var self = paragrafs[+number],
+        back = numbers[+number];
         for(j=0;j<numbers.length;j++){
             paragrafs[j].style.opacity = 0;
             numbers[j].style.backgroundColor = 'transparent';
@@ -101,7 +101,6 @@ window.onload=function () {
        clickButton(button);
        clickButton(button2);
         var after = document.getElementsByClassName('onclick')[0].getElementsByTagName('a');
-        console.log(after);
         for (var z = 0;z<after.length;z++){
             after[z].onclick = function () {
                 if(document.getElementsByClassName("header_two after")[0]){
@@ -116,8 +115,5 @@ window.onload=function () {
                document.getElementsByClassName("header_two after")[0].setAttribute('class',"header_two before");
            };
        }
-    // document.getElementById('lines_button').onclick = function () {
-    //     document.getElementsByClassName("header_two before")[0].setAttribute('class',"header_two after");
-    // }
 
 }
